@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dataTable-js</title>
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/dataTable.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/js/DT.Server.js"></script>
+	<script type="text/javascript" src="../src/js/DT.Templating.js"></script>
+	<script type="text/javascript" src="../src/js/DT.DataTable.js"></script>
+	<script type="text/javascript" src="../src/js/DT.RemoteDataTable.js"></script>
+	<script type="text/javascript" src="../src/js/DT.Bootstrapper.js"></script>
+</head>
+<body>
+	
+	<h1>Fruits</h1>
+	<table class="dataTable">
+		<thead>
+			<th>Type</th>
+			<th>Name</th>
+			<th>Taste</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Apple</td>
+				<td>Golden Delicious</td>
+				<td>Good</td>
+			</tr>
+			<tr>
+				<td>Pear</td>
+				<td>Bartlett</td>
+				<td>Really tasty</td>
+			</tr>
+			<tr>
+				<td>Orange</td>
+				<td>Endless Summer</td>
+				<td>Amazing</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>Fruits from serer</h1>
+	<table class="dataTable" data-server="server.php" data-action="getFruits">
+		<thead>
+			<th>Type</th>
+			<th>Name</th>
+			<th>Taste</th>
+		</thead>
+		<tbody>
+			<tr class="template">
+				<td>[type]</td>
+				<td>[name]</td>
+				<td>[taste]</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>Fruits from serer with paging</h1>
+	<table class="dataTable" data-server="server.php" data-action="getPagedFruits" data-limit="8">
+		<thead>
+			<th>Type</th>
+			<th>Name</th>
+			<th>Taste</th>
+		</thead>
+		<tbody>
+			<tr class="template">
+				<td>[type]</td>
+				<td>[name]</td>
+				<td>[taste]</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<th><a href="#" data-paging="previous">First</th>
+			<th><a href="#" data-paging="page"></th>
+			<th><a href="#" data-paging="next">Second</th>
+		</tfoot>
+	</table>
+
+</body>
+</html>

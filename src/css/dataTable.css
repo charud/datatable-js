@@ -1,0 +1,110 @@
+.dataTable
+{
+	font-family: helvetica, arial, sans-serif;
+	font-size: 14px;
+
+	position: relative;
+	background-color: #e6e6e6;
+	width: 1180px;	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	border-spacing: 0px;
+
+	border: 1px solid #bbb;
+}
+.dataTable thead th
+{
+	text-align: left;
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	padding: 4px 6px;
+}
+
+.dataTable tr
+{		
+	background-color: white;
+}
+.dataTable tr:nth-child(2n)
+{
+	background-color: #fafafa;
+}
+.dataTable tr.selected
+{
+	background-color: #3598FE;
+	color: white;
+}
+.dataTable td
+{
+	padding: 4px 6px;
+	background: none;
+	border: none;
+}
+
+.dataTable tfoot
+{
+	display: block;
+	height: 28px;
+	
+	background-color: #e6e6e6;
+}
+
+.dataTable tfoot tr
+{
+	background-color: #e6e6e6;
+}
+
+.dataTable tfoot th a
+{
+	text-align: center;
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	padding: 4px 6px;
+	display: block;
+	width: 100px;
+	
+	text-decoration: none;
+	color: #444;
+}
+
+.dataTable tfoot th a:active
+{
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #ccc;
+}
+
+.dataTable tfoot th a[data-paging="previous"]
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.dataTable tfoot th a[data-paging="next"]
+{
+	position: absolute;
+	left: 50%;
+	margin-left: 100px;
+}
+
+.dataTable tfoot th *[data-paging="page"]
+{
+	position: absolute;
+	left: 50%;
+	padding-top: 5px;
+	width: 85px;
+	margin-left: 14px;
+	background-color: white;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}

@@ -26,8 +26,6 @@ DT.RemoteDataTable = function(options)
 		parameters.limit = parameters.limit || _limit;
 		parameters.offset = parameters.offset || _offset;
 
-		console.log(parameters);
-
 		_server.get(_serverAction, parameters).success(function(data)
 		{
 			_dataTable.fill(data);

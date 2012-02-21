@@ -57,9 +57,14 @@
 	background-color: #e6e6e6;
 }
 
-.dataTable tfoot th a
-{
+.dataTable tfoot td 
+{	
 	text-align: center;
+	padding: 1px;
+}
+
+.dataTable tfoot td a
+{
 	background-color: #e6e6e6;
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid #aaa;
@@ -73,7 +78,7 @@
 	color: #444;
 }
 
-.dataTable tfoot th a:active
+.dataTable tfoot td a:active
 {
 	border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -81,21 +86,21 @@
 	border-top: 1px solid #ccc;
 }
 
-.dataTable tfoot th a[data-paging="previous"]
+.dataTable tfoot td a[data-paging="previous"]
 {
 	position: absolute;
 	left: 50%;
 	margin-left: -100px;
 }
 
-.dataTable tfoot th a[data-paging="next"]
+.dataTable tfoot td a[data-paging="next"]
 {
 	position: absolute;
 	left: 50%;
 	margin-left: 100px;
 }
 
-.dataTable tfoot th *[data-paging="page"]
+.dataTable tfoot td *[data-paging="page"]
 {
 	position: absolute;
 	left: 50%;

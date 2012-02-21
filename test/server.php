@@ -19,7 +19,7 @@ else if($_GET['action'] == "getPagedFruits")
 	$fruits = array();
 	for($i = $offset; $i < $offset + $limit; $i++)
 	{
-		$fruits[] = array("type" => 'Fruit ' . ($i+1), 'name' => 'Type ' . ($i+1), 'taste' => 'Score: ' . $i);
+		$fruits[] = array("type" => 'Fruit ' . ($i+1), 'name' => 'Name ' . ($i+1), 'taste' => 'Score: ' . $i);
 	}
 
 	echo json_encode($fruits);

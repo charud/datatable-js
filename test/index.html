@@ -16,9 +16,11 @@
 	<h1>Fruits</h1>
 	<table class="dataTable">
 		<thead>
-			<th>Type</th>
-			<th>Name</th>
-			<th>Taste</th>
+			<tr>
+				<th>Type</th>
+				<th>Name</th>
+				<th>Taste</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr>
@@ -42,9 +44,11 @@
 	<h1>Fruits from server</h1>
 	<table class="dataTable" data-server="server.php" data-action="getFruits">
 		<thead>
-			<th>Type</th>
-			<th>Name</th>
-			<th>Taste</th>
+			<tr>
+				<th>Type</th>
+				<th>Name</th>
+				<th>Taste</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr class="template">
@@ -58,9 +62,11 @@
 	<h1>Fruits from server with paging</h1>
 	<table class="dataTable" data-server="server.php" data-action="getPagedFruits" data-limit="8">
 		<thead>
-			<th>Type</th>
-			<th>Name</th>
-			<th>Taste</th>
+			<tr>
+				<th>Type</th>
+				<th>Name</th>
+				<th>Taste</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr class="template">
@@ -70,9 +76,11 @@
 			</tr>
 		</tbody>
 		<tfoot>
-			<th><a href="#" data-paging="previous">Previous</a></th>
-			<th><span data-paging="page"></span></th>
-			<th><a href="#" data-paging="next">Next</a></th>
+			<tr>
+				<td><a href="#" data-paging="previous">Previous</a></td>
+				<td><span data-paging="page"></span></td> 
+				<td><a href="#" data-paging="next">Next</a></td>
+			</tr>
 		</tfoot>
 	</table>
 

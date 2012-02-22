@@ -12,7 +12,8 @@ DT.Templating = (function(me)
 
 		for(var i in data) 
 		{
-			outerHtml = outerHtml.replace("[" + i + "]", data[i]);
+			//outerHtml = outerHtml.replace("[" + i + "]", data[i]); // only 1 occurrance
+			outerHtml = outerHtml.replace(new RegExp("\\[" + i + "\\]", "g"), data[i]); // all occurrances
 		}
 
 		wrappedNewElement.html(outerHtml);

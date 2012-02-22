@@ -10,9 +10,9 @@ DT.DataTable = function(options)
 
 	// Check that a dataTable doesn't already exist for this table element,
 	// and in that case, return the already existing instance instead of creating a new
-	var dataTable = $(options.table).data("dataTable");
+	var dataTable = $(options.table).data("DT.DataTable");
 	if(dataTable) return dataTable;
-	$(options.table).data("dataTable", me);
+	$(options.table).data("DT.DataTable", me);
 	
 	me.init = function()
 	{

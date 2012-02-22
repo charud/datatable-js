@@ -14,10 +14,10 @@ DT.RemoteDataTable = function(options)
 		_dataTable = new DT.DataTable(options);
 		_server = options.server || getServerFromTable();
 		_serverAction = options.action || getServerActionFromTable();
-		_limit = options.limit || getLimitFromTable();
+		_limit = options.limit || getLimitFromTable() || _limit;
 
-		$('*[data-paging=previous]').click(me.gotoPreviousPage);
-		$('*[data-paging=next]').click(me.gotoNextPage);
+		_dataTable.getElement().find('*[data-paging=previous]').click(me.gotoPreviousPage);
+		_dataTable.getElement().find('*[data-paging=next]').click(me.gotoNextPage);
 	};
 
 	me.load = function(parameters)
